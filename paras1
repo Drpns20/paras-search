@@ -1,7 +1,7 @@
 /* for selection sort - Dr. P. N. Singh */
 #include <stdio.h>
 int main() {
-   int a[20], x,y,temp;
+   int a[10], x,y,temp;
    for(x=0;x<10;x++) {
        printf("Enter element %d : ",x+1);
        scanf("%d", &a[x]);
