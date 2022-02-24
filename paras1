@@ -1,0 +1,21 @@
+/* for selection sort - Dr. P. N. Singh */
+#include <stdio.h>
+int main() {
+   int a[10], x,y,temp;
+   for(x=0;x<10;x++) {
+       printf("Enter element %d : ",x+1);
+       scanf("%d", &a[x]);
+   }
+   /* now sorting */
+   for(x=0;x<9;x++)
+      for(y=x+1;y<10;y++)
+        if(a[x] > a[y]) {
+            temp=a[x];
+            a[x]=a[y];
+            a[y]=temp;
+        }
+   printf("The sorted array:\n");
+   for(x=0;x<10;x++)
+       printf("%5d", a[x]);
+   return (0);
+  } 
